@@ -23,4 +23,16 @@ function reverseInt(n) {
   }
 }
 
+// Math.sign(4000) === 1
+// Math.sign(-4000) === -1
+
+// SOLUTION #1 (only one went over, many more solutions)
+// function reverseInt(n) {
+//   const reversed = n.toString().split('').reverse().join('');
+//   // if (n < 0) {
+//   //   return parseInt(reversed) * -1;
+//   // }
+//   return parseInt(reversed) * Math.sign(n);
+// }
+
 module.exports = reverseInt;
