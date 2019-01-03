@@ -12,26 +12,41 @@
 //   4
 //   buzz
 
-// function fizzBuzz(n) {}
-
-// MY FIRST SOLUTION
-// ( let number = 0;
-//   if (n > number) {
-//     console.log(++number);
-//   }
-// )
 function fizzBuzz(n) {
-  for (i = 0; i < n; ++i) {
-    if (i % 3 === 0) {
+  for (let i = 1; i <= n; i++) {
+    // Is the number a multiple of both 3 and 5?
+    // could have just done i % 15 below
+    if (i % 3 === 0 && i % 5 === 0) {
+      console.log("fizzbuzz");
+    } else if (i % 3 === 0) {
       console.log("fizz");
     } else if (i % 5 === 0) {
       console.log("buzz");
-    } else if (i % 3 === 0 && i % 5 === 0) {
-      console.log("fizzbuzz");
     } else {
       console.log(i);
     }
   }
 }
+
+// I HAD THE ORDER WRONG I NEEDED TO TEST 3 AND 5 FIRST OR IT WOULD ALWAYS HIT THE FIRST ONE. DUMB MISTAKE, BASICALLY SOLVED IT BY MYSELF, YAY TODAY!
+// MY FIRST SOLUTION
+// // ( let number = 0;
+// //   if (n > number) {
+// //     console.log(++number);
+// //   }
+// // ) REAL FIRST ATTEMPT BELOW:
+// function fizzBuzz(n) {
+//   for (let i = 0; i < n; ++i) {
+//     if (i % 3 === 0) {
+//       console.log("fizz");
+//     } else if (i % 5 === 0) {
+//       console.log("buzz");
+//     } else if (i % 3 === 0 && i % 5 === 0) {
+//       console.log("fizzbuzz");
+//     } else {
+//       console.log(i);
+//     }
+//   }
+// }
 
 module.exports = fizzBuzz;
