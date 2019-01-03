@@ -12,6 +12,18 @@
 //   4
 //   buzz
 
-function fizzBuzz(n) {}
+// function fizzBuzz(n) {}
+
+// MY FIRST SOLUTION
+// ( let number = 0;
+//   if (n > number) {
+//     console.log(++number);
+//   }
+// )
+function fizzBuzz(n) {
+  for (i = 0; i < n; ++i) {
+    console.log(i);
+  }
+}
 
 module.exports = fizzBuzz;
