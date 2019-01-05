@@ -10,17 +10,18 @@
 
 // function chunk(array, size) {}
 
-// MY FIRST SOLUTION
+// MY FIRST SOLUTION (thought I had it but I failed)
 function chunk(array, size) {
   let length = array.length;
   let calc = length/size;
   let numberOfSubArrays = Math.ceil(calc);
   let newArray = [];
+  let newSubArray = [];
   for (let i = 1; i <= numberOfSubArrays; i++) {
-    for (let i = 1; i <= size; i++) {
-      let newSubArray = [];
-      newSubArray.push();
+    for (let i = 0; i <= size - 1; i++) {
+      newSubArray.push(array[i]);
     }
+    newArray.push(newSubArray);
   }
   return newArray;
 }
