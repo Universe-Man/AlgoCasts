@@ -8,25 +8,59 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
-// function chunk(array, size) {}
+// SOLUTION #1
+// function chunk(array, size) {
+//   const chunked = [];
+//   for (let element of array) {
+//     const last = chunked[chunked.length - 1]
+//     if (!last || last.length === size) {
+//       chunked.push([element]);
+//     } else {
+//       last.push(element);
+//     }
+//   }
+//   return chunked;
+// }
 
-// MY FIRST SOLUTION (thought I had it but I failed)
+// SOLUTION #2 (BONER SOLUTION)
 function chunk(array, size) {
-  let length = array.length;
-  let calc = length/size;
-  let numberOfSubArrays = Math.ceil(calc);
-  let newArray = [];
-  let newSubArray = [];
-  for (let i = 1; i <= numberOfSubArrays; i++) {
-    for (let i = 0; i <= size - 1; i++) {
-      newSubArray.push(array[i]);
-    }
-    newArray.push(newSubArray);
+  const chunked = [];
+  let index = 0;
+  while (index < array.length) {
+    chunked.push(array.slice(index, index + size));
+    index += size;
   }
-  return newArray;
+  return chunked;
 }
 
+// MY ATTEMPT AT SOLUTION #2
+// function chunk(array, size) {
+//   const chunked = [];
+//   const i = 0;
+//   while (i < array.length) {
+//     let slice = array.slice(i, size - 1)
+//     chunked.push(slice);
+//     i + size;
+//   }
+//   return chunked;
+// }
 
+// MY FIRST SOLUTION (thought I had it but I failed)
+// function chunk(array, size) {
+//   let length = array.length;
+//   let calc = length/size;
+//   let numberOfSubArrays = Math.ceil(calc);
+//   let newArray = [];
+//   let newSubArray = [];
+//   for (let i = 1; i <= numberOfSubArrays; i++) {
+//     for (let i = 0; i <= size - 1; i++) {
+//       newSubArray.push(array[i]);
+//     }
+//     newArray.push(newSubArray);
+//   }
+//   return newArray;
+// }
+///////////////////////////////////
 // let newArr = [];
 // for (let i = 0; i <= size; i++) {
 //   newArr.push(array[i])
