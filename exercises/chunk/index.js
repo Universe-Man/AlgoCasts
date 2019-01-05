@@ -17,8 +17,12 @@ function chunk(array, size) {
   let numberOfSubArrays = Math.ceil(calc);
   let newArray = [];
   for (let i = 1; i <= numberOfSubArrays; i++) {
-    
+    for (let i = 1; i <= size; i++) {
+      let newSubArray = [];
+      newSubArray.push();
+    }
   }
+  return newArray;
 }
 
 
