@@ -8,6 +8,30 @@
 // chunk([1, 2, 3, 4, 5], 4) --> [[ 1, 2, 3, 4], [5]]
 // chunk([1, 2, 3, 4, 5], 10) --> [[ 1, 2, 3, 4, 5]]
 
-function chunk(array, size) {}
+// function chunk(array, size) {}
+
+// MY FIRST SOLUTION
+function chunk(array, size) {
+  let length = array.length;
+  let calc = length/size;
+  let numberOfSubArrays = Math.ceil(calc);
+  let newArray = [];
+  for (let i = 1; i <= numberOfSubArrays; i++) {
+    
+  }
+}
+
+
+// let newArr = [];
+// for (let i = 0; i <= size; i++) {
+//   newArr.push(array[i])
+// }
+// return newArr;
+
+// array.forEach(
+//   () => {
+//
+//   }
+// )
 
 module.exports = chunk;
