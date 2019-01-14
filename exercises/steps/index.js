@@ -17,20 +17,23 @@
 //       '### '
 //       '####'
 
+// SOLUTION #2 (RECURSION)
+function steps(n) {}
+
 // SOLUTION #1 (FOLLOWING HIM NOW)
-function steps(n) {
-  for (let row = 0; row < n; row++) {
-    let stair = '';
-    for (let column = 0; column < n; column++) {
-      if (column <= row) {
-        stair += '#';
-      } else {
-        stair += ' ';
-      }
-    }
-    console.log(stair);
-  }
-}
+// function steps(n) {
+//   for (let row = 0; row < n; row++) {
+//     let stair = '';
+//     for (let column = 0; column < n; column++) {
+//       if (column <= row) {
+//         stair += '#';
+//       } else {
+//         stair += ' ';
+//       }
+//     }
+//     console.log(stair);
+//   }
+// }
 
 // SOLUTION #1 (I WROTE THIS CODE FROM HIS DIAGRAM) [FAILED, BUT MAYBE ALMOST?]
 // (concat needed to be += and for (<=) needed to be (<))
