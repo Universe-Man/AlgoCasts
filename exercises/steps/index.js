@@ -19,14 +19,15 @@
 
 // function steps(n) {}
 
-// MY FIRST SOLUTION
+// MY FIRST SOLUTION (i completely failed at this so i'm just gonna watch the solution)
 function steps(n) {
   const number = n;
-  for () {
+  while (let i <= number) {
     for (let i = 0; i <= number; i++) {
-
+      ?
     }
-  }  
+    i++;
+  }
 }
 
 
