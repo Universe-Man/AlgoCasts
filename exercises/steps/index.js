@@ -17,15 +17,15 @@
 //       '### '
 //       '####'
 
-// SOLUTION #1 (I WROTE THIS CODE FROM HIS DIAGRAM)
+// SOLUTION #1 (I WROTE THIS CODE FROM HIS DIAGRAM) [FAILED, BUT MAYBE ALMOST?]
 function steps(n) {
   for (let r = 0; r <= n; r++) {
     let stair = "";
     for (let c = 0; c <= n; c++) {
       if (c <= r) {
-        stair.push("#");
+        stair.concat("#");
       } else {
-        stair.push(" ");
+        stair.concat(" ");
       }
     }
     console.log(stair);
