@@ -17,18 +17,31 @@
 //       '### '
 //       '####'
 
-// function steps(n) {}
-
-// MY FIRST SOLUTION (i completely failed at this so i'm just gonna watch the solution)
+// SOLUTION #1 (I WROTE THIS CODE FROM HIS DIAGRAM)
 function steps(n) {
-  const number = n;
-  while (let i <= number) {
-    for (let i = 0; i <= number; i++) {
-      ?
+  for (let r = 0; r <= n; r++) {
+    let stair = "";
+    for (let c = 0; c <= n; c++) {
+      if (c <= r) {
+        stair.push("#");
+      } else {
+        stair.push(" ");
+      }
     }
-    i++;
+    console.log(stair);
   }
 }
+
+// MY FIRST SOLUTION (i completely failed at this so i'm just gonna watch the solution)
+// function steps(n) {
+//   const number = n;
+//   while (let i <= number) {
+//     for (let i = 0; i <= number; i++) {
+//       ?
+//     }
+//     i++;
+//   }
+// }
 
 
 
