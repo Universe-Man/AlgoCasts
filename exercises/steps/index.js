@@ -17,6 +17,26 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
+// function steps(n) {}
+
+// MY FIRST SOLUTION
+function steps(n) {
+  const number = n;
+  for () {
+    for (let i = 0; i <= number; i++) {
+
+    }
+  }  
+}
+
+
+
+
+
+
+
+
+
+
 
 module.exports = steps;
