@@ -17,8 +17,25 @@
 //       '### '
 //       '####'
 
-// SOLUTION #2 (RECURSION)
-function steps(n) {}
+// ITERATIVE SOLUTIONS FIRST, BEFORE RECURSION SOLUTIONS
+
+// SOLUTION #2 (RECURSION) (make your base case first!!!!)
+function steps(n, row = 0, stair = '') {
+  if (n === row) {
+    return;
+  }
+  if (n === stair.length) {
+    console.log(stair);
+    return steps(n, row + 1);
+    // return;
+  }
+  if (stair.length <= row) {
+    stair += '#';
+  } else {
+    stair += ' ';
+  }
+  steps(n, row, stair);
+}
 
 // SOLUTION #1 (FOLLOWING HIM NOW)
 // function steps(n) {
@@ -61,15 +78,5 @@ function steps(n) {}
 //     i++;
 //   }
 // }
-
-
-
-
-
-
-
-
-
-
 
 module.exports = steps;
